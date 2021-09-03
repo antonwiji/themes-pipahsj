@@ -4,11 +4,6 @@
 
 <section id="hero" class="hero">
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="<?= get_theme_file_uri('img/bangunan.jpg'); ?>" class="d-block w-100" alt="..." height="550px">
@@ -25,16 +20,7 @@
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://i1.wp.com/f1-styx.imgix.net/article/2018/12/18125929/Pipa-Paralon.jpg?fit=1000%2C664&ssl=1" class="d-block w-100" alt="..." height="550px">
-      <div class="carousel-caption">
-        <h5>Third slide label</h5>
-        <h5>Third slide label</h5>
-        <h5>Third slide label</h5>
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
+    
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
