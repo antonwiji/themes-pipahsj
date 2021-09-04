@@ -1,7 +1,8 @@
 <?php
 
 function amarra_theme(){
-  wp_enqueue_style('style' , get_theme_file_uri('/css/style.css'));
+  wp_enqueue_style('style' , get_theme_file_uri('/css/style2.css'));
+  wp_enqueue_style('slide', get_theme_file_uri('/css/slide.css'));
 }
 
 add_action('wp_enqueue_scripts', 'amarra_theme');

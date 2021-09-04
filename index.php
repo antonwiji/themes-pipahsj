@@ -3,34 +3,32 @@
 ?>
 
 <section id="hero" class="hero">
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<?= get_theme_file_uri('img/bangunan.jpg'); ?>" class="d-block w-100" alt="..." height="550px">
-      <div class="carousel-caption">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-        <a href="#" class="btn btn-success">Hubungi Kami</a>
-      </div>
+  <div class="owl-carousel owl-theme">
+  
+  <?php 
+        $slider = new WP_Query(array(
+            'post_type' => 'slider',
+            'posts_per_page' => '-1'
+        ));
+
+        if($slider->have_posts()) : 
+          while($slider->have_posts()): $slider->the_post();?>
+
+  <div class="slide" style="background-image: url(<?php the_field('img_slider') ?>);">
+    <div class="slide-content">
+      <h1 mb-5><?= the_title(); ?></h1>
+      <p><?php the_field('deskripsi'); ?></p>
+      <a href="<?php the_field('url'); ?>" ><button class="btn btn-outline-light"><?php the_field('button_name'); ?></button></a>
     </div>
-    <div class="carousel-item">
-      <img src="<?= get_theme_file_uri('img/pipa_pvc.jpg'); ?>" class="d-block w-100" alt="..." height="550px">
-      <div class="carousel-caption">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+
+  <?php
+  endwhile;
+endif;
+  wp_reset_postdata();
+    ?>
+  </div>
+
 </section>
 
 <!-- end Hero -->
