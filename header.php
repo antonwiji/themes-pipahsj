@@ -31,9 +31,9 @@
         <header>
               </ul>
         </div>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background:linear-gradient(#FFFB00, #FFFB12);">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background:linear-gradient(#FFFB00, #FFFB12);">
   <div class="container">
-    <a class="navbar-brand" href="http://localhost/pipahsj/"><img src="<?php echo get_theme_file_uri('/img/logohsj.png'); ?>" alt="logo" width="80">Harapan Sarana Jaya</a>
+    <a class="navbar-brand" href="http://localhost/pipahsj/"><img src="<?php echo get_theme_file_uri('/img/logohsj.png'); ?>" alt="logo" width="80"><span class="fs-6">Harapan Sarana Jaya</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

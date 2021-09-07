@@ -1,25 +1,25 @@
 <?php
 
-function amarra_theme(){
+function hsj_theme(){
   wp_enqueue_style('style' , get_theme_file_uri('/css/style2.css'));
   wp_enqueue_style('slide', get_theme_file_uri('/css/slide.css'));
 }
 
-add_action('wp_enqueue_scripts', 'amarra_theme');
+add_action('wp_enqueue_scripts', 'hsj_theme');
 
 // setting Nomor kontak wa, email, telp
 
-function amarra_customize($wp_customize) {
+function hsj_customize($wp_customize) {
         //    kontak wa
-    $wp_customize->add_section('kontak_amarra', array(
-        'title' => 'Kontak Amarra'
+    $wp_customize->add_section('kontak_hsj', array(
+        'title' => 'Kontak Hsj'
     ));
     $wp_customize->add_setting('wa_setting', array(
         'default' => '+62 8570-9005-738'
     ));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'wa_control', array(
         'label' => 'No whatsapp',
-        'section' => 'kontak_amarra',
+        'section' => 'kontak_hsj',
         'settings' => 'wa_setting',
         'type' => 'text'
 
@@ -31,7 +31,7 @@ function amarra_customize($wp_customize) {
     ));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'email_control', array(
         'label' => 'Email',
-        'section' => 'kontak_amarra',
+        'section' => 'kontak_hsj',
         'settings' => 'email_setting',
         'type' => 'text'
 
@@ -44,7 +44,7 @@ function amarra_customize($wp_customize) {
         ));
         $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'telp_control', array(
             'label' => 'No telp',
-            'section' => 'kontak_amarra',
+            'section' => 'kontak_hsj',
             'settings' => 'telp_setting',
             'type' => 'text'
     
@@ -52,11 +52,11 @@ function amarra_customize($wp_customize) {
 
 }
 
-add_action('customize_register', 'amarra_customize');
+add_action('customize_register', 'hsj_customize');
 
 //end setting
 
-function amarra_post_type() {
+function hsj_post_type() {
     register_post_type('slider', array(
         'public' => true,
         'supports' => array(
@@ -76,12 +76,12 @@ function amarra_post_type() {
 }
 
 
-add_action('init', 'amarra_post_type');
+add_action('init', 'hsj_post_type');
 
 
 // ini post produk
 
-function amarra_produk_type() {
+function hsj_produk_type() {
     register_post_type('produk', array(
         'public' => true,
         'supports' => array(
@@ -100,7 +100,7 @@ function amarra_produk_type() {
 
 }
 
-add_action('init', 'amarra_produk_type');
+add_action('init', 'hsj_produk_type');
 
 
 

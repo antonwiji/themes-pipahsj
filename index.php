@@ -44,8 +44,8 @@ endif;
     </div>
     <div class="col-md-6 pd-left pd-top" style="background-color: #FF720B;" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1200" data-aos-delay="500">
 
-    <h3>Rucika LITE</h3>
-    <p>Sejalan dengan meningkatnya kesadaran akan lingkungan hidup yang sehat dan asri, RUCIKA LITE merupakan sistem pipa uPVC (unplastized Polyvinyl Chloride) yang dirancang untuk menghindari sistem pembuangan terbuka.</p>
+    <h3>Pipa Limbah</h3>
+    <p>merupakan elemen penting dalam Instalasi pengolahan air kotor (IPAL) sebagai media untuk mengalirkan limbah biologis ke media pengolahan.</p>
     
     <button class="btn btn-outline-dark"> Cek Harga </button>
     </div>
@@ -53,7 +53,7 @@ endif;
 
   <div class="row">
     <div class="col-md-6 pd-left pd-top produk" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1200">
-      <h3>Rucika Safe And Lok</h3>
+      <h3>Pipa PVC</h3>
     <p>Pipa PVC adalah sistem jaringan perpipaan uPVC sesuai Standar Nasional Indonesia (SNI) yang dirancang untuk mendistribusikan air minum dan air bersih ke masyarakat luas serta berbagai jenis proyek.</p>
     <button class="btn btn-outline-dark"> Cek Harga </button>
   </div>
@@ -68,8 +68,8 @@ endif;
     </div>
     <div class="col-md-6 pd-left pd-top bg-black" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1200" data-aos-delay="500">
 
-    <h3>Rucika Black</h3>
-    <p>RUCIKA BLACK merupakan sistem perpipaan yang terpercaya dengan karakteristik istimewa dan sesuai untuk aplikasi air minum karena terbuat dari Polyethylene (PE).</p>
+    <h3>Pipa HDPE</h3>
+    <p>Pipa HDPE adalah pipa plastik bertekanan yang banyak digunakan untuk pipa air dan pipa gas.</p>
     
     <button class="btn btn-outline-light"> Cek Harga </button>
     </div>
@@ -103,7 +103,7 @@ endif;
 <div class="bg-image">
   <div class="bg-text">
     <div data-aos="zoom-out">
-    <h2 style="color: white;">Hubungi Kamu</h2>
+    <h2 style="color: white;">Hubungi Kami</h2>
     <p>Apabila anda memiliki pertanyaan, anda dapat langsung mengirimkannya kepada kami melalui email atau anda juga dapat menghubungi kami pada nomor hotline <?= get_theme_mod('telp_setting'); ?>.</p>
     </div>
     <div data-aos="fade-up">
