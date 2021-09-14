@@ -44,7 +44,7 @@
     <div class="col d-flex justify-content-end">
       <div class="bg-light d-flex align-items-center rounded p-2 shadow">Hubungi Kami
         </div>
-        <a href="https://api.whatsapp.com/send?phone=<?= get_theme_mod('wa_setting'); ?>"><img class="ms-3" width="40" src="<?= get_theme_file_uri('img/wa.png'); ?>" alt="wa"></a>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><img class="ms-3" width="40" src="<?= get_theme_file_uri('img/wa.png'); ?>" alt="wa"></a>
       </div>
   </div>
 </div>

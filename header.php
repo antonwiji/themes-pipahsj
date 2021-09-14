@@ -25,7 +25,7 @@
     <div class="bawah">
       <ul>
         <li style="margin-right: 7px;">Sales Canter </li>
-        <li><i class="bi bi-whatsapp"></i>+<a href="https://api.whatsapp.com/send?phone=<?= get_theme_mod('wa_setting'); ?>"> <?= get_theme_mod('wa_setting'); ?></a></li>
+        <li><i class="bi bi-whatsapp"></i>+<a data-bs-toggle="modal" data-bs-target="#exampleModal" href="https://api.whatsapp.com/send?phone=<?= get_theme_mod('wa_setting'); ?>"> <?= get_theme_mod('wa_setting'); ?></a></li>
         <li><i class="bi bi-telephone"></i><a href="tel:<?= get_theme_mod('telp_setting'); ?>"> <?= get_theme_mod('telp_setting'); ?></a></li>
         <li><i class="bi bi-envelope"></i><a href="mailto:<?= get_theme_mod('email_setting'); ?>"> <?= get_theme_mod('email_setting'); ?></a></li>    
         <header>
@@ -44,7 +44,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            PRODUK
+            PRODUKwewe
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="http://localhost/pipahsj/produk/rucika-lite/">Rucika LITE</a></li>
@@ -61,3 +61,24 @@
     </div>
   </div>
 </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Admin whatsapp</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <a href="https://api.whatsapp.com/send?phone=6285355513522">+62853-5551-3522 (Farid Abdilah)</a>
+        <hr>
+        <a href="https://api.whatsapp.com/send?phone=6281377825157">+62813-7782-5157 (Ayu Ismail)</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
